@@ -1,0 +1,23 @@
+Comandos GIT
+
+# Comandos de inicialização
+
+-- Utilizados para inicializar um repositório remoto recentemente criado.
+
+1) cd /projeto			-> Acesso o diretório do projeto. 
+2) echo "# teste" >> README.md	-> crie um arquivo inicial.
+git init			-> Cria o projeto localmnete.
+git add README.md		-> Adicionao o arquivo criado ao controle de versão.
+git commit -m "first commit"	-> Cria versões seguras para o arquivo adicionado ou modificado.
+git branch -M master		-> Cria a branch master do projeto.
+git remote add origin https://github.com/amrlcba/teste.git -> Configura a origem remota para o projeto.
+git push -u origin master	-> Envia tudo para o servidor remoto.
+
+# Comandos de manutenção do repositório.
+1) git init	-> Inicializa o repositório
+2) git status	-> Mudanças no repositório.
+3) git commit	-> Cria versões seguras para os arquivos adicionados ou modificados
+		   -a  -> Esta flag é utilizada para comitar todos os arquivos add/mod de uma vez.
+		   -m  -> Digite -m "mensagem informativa do commit", utilizado para que se tenha um controle do que foi alterado.
+4) git push	-> Envia as alterações e adições para o repositório remoto.
+5) git pull	-> Sincroniza com o diretório remoto, baixa os arquivos alterados no repositório remoto ou por outros devs.
